@@ -1,0 +1,53 @@
+.card{
+	width:100%;
+	margin-bottom:60px;
+	text-align: center;
+
+	&:last-of-type{
+		margin-bottom:0px;
+	}
+
+	&__icon{
+		font-size:55px;
+		margin-bottom:30px;
+
+		&--red{
+			color: #e53935;
+		}
+
+		&--blue{
+			color: #29B6F6;
+		}
+
+		&--pink{
+			color: $colour-pink;
+		}
+	}
+
+	&__title{
+		margin-bottom: 25px;
+		font-family: $card-title-font;
+		font-size:18px;
+		color:$colour-navy;
+	}
+		
+	&__text{
+		color:#9E9E9E;
+	}
+
+}
+
+.cards-container{
+	width:50%;
+	margin-top:70px;
+
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-gap:50px;
+
+	@include breakpoint($large){
+		width:100%;
+		grid-gap:30px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

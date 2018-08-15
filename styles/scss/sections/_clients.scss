@@ -1,0 +1,61 @@
+.clients{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+	width:100%;
+
+	margin:60px 0px;
+}
+
+.client{
+	width:100%;
+	margin-bottom:40px;
+	text-align: center;
+
+	&:last-of-type{
+		margin-bottom: 0px;
+	}
+
+	&__image{
+		width:100px;
+		height:100px;
+
+		border-radius: 50%;
+
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+		object-fit: cover;
+
+		margin-bottom: 20px;
+	}
+
+	&__name{
+		color:$colour-navy;
+		margin-bottom:10px;
+	}
+
+	&__tag{
+		@extend %tag;
+		
+		color:#747474;
+		margin-bottom: 10px;
+	}
+
+	&__description{
+		color:$body-colour;
+		font-size:14px;
+	}
+
+	@include breakpoint($small){
+		width:46%;
+		margin:0px 2%;
+		margin-bottom: 60px;
+	}
+
+	@include breakpoint($large){
+		width:29.3333%;
+	}
+}

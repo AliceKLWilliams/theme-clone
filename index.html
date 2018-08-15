@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="styles/css/style.css">
+	<title>Hestia Clone</title>
+</head>
+<body>
+	<nav class="nav">
+		<div class="nav__container">
+			<div class="nav__logo-container">
+				<p class="nav__logo">Hestia</p>
+				<button class="nav__toggle"><i class="fas fa-bars nav__hamburger"></i></button>
+			</div>
+			<ul class="nav__items">
+				<li class="nav__item">
+					<a class="nav__link" href="#">
+						<i class="nav__icon fas fa-cloud"></i>
+						Features
+						<button class="nav__caret">
+							<i class="fas fa-caret-down"></i>
+						</button>
+					</a>
+					<div class="dropdown dropdown--full">
+						<div class="dropdown__column">
+							<h4 class="dropdown__header">Setup</h4>
+							<ul class="dropdown__list">
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link"><i class="far fa-clock dropdown__icon"></i>1 Minute Setup</a>
+								</li>
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link"><i class="far fa-eye dropdown__icon"></i>Live Customiser</a>
+								</li>
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link"><i class="fas fa-video dropdown__icon"></i>Video Tutorials</a>
+								</li>
+							</ul>
+						</div>
+						<div class="dropdown__column">
+							<h4 class="dropdown__header">Content</h4>
+							<ul class="dropdown__list">
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link"><i class="far fa-image dropdown__icon"></i>Custom Backgrounds</a>
+								</li>
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link"><i class="fas fa-mobile-alt dropdown__icon"></i>Responsive Design</a>
+								</li>
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link"><i class="fas fa-fast-forward dropdown__icon"></i>Optimised for Speed</a>
+								</li>
+							</ul>
+						</div>
+						<div class="dropdown__column">
+							<h4 class="dropdown__header">Design</h4>
+							<ul class="dropdown__list">
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link"><i class="fas fa-flag dropdown__icon"></i>Translation and RTL Ready</a>
+								</li>
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link"><i class="fas fa-rocket dropdown__icon"></i>Fast Updates and Support</a>
+								</li>
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link"><i class="fas fa-search dropdown__icon"></i>SEO Optimised</a>
+								</li>
+							</ul>
+						</div>
+						<div class="dropdown__column">
+							<h4 class="dropdown__header">Integration</h4>
+							<ul class="dropdown__list">
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link"><i class="far fa-money-bill-alt dropdown__icon"></i>WooCommerce Ready</a>
+								</li>
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link"><i class="fas fa-arrows-alt dropdown__icon"></i>Drag-and-Drop Builder</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">
+						<i class="nav__icon fas fa-th-large"></i>
+						Sections
+						<button class="nav__caret">
+							<i class="fas fa-caret-down"></i>
+						</button>
+					</a>
+					<div class="dropdown">
+						<ul class="dropdown__list">
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link"><i class="fas fa-wrench dropdown__icon"></i>Features</a>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link"><i class="fas fa-user dropdown__icon"></i>Our Team</a>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link"><i class="fas fa-comment-alt dropdown__icon"></i>Testimonials</a>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link"><i class="far fa-envelope dropdown__icon"></i>Subscribe</a>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link"><i class="fas fa-paint-brush dropdown__icon"></i>Blog</a>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link"><i class="fas fa-phone dropdown__icon"></i>Contact</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">
+						<i class="nav__icon fas fa-shopping-cart"></i>
+						Shop
+					</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">
+						<i class="nav__icon fas fa-list-ul"></i>
+						Blog
+					</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">
+						<i class="nav__icon fas fa-envelope"></i>
+						Contact
+					</a>
+				</li>
+				<li class="nav__item">
+					<a class="btn btn--rounded nav__link" href="#">
+						<i class="fas fa-download"></i>
+						Download
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div>
+		<img class="splash" src="images/splash.jpg" alt="A mountain range during sunrise."/>
+		<div class="splash__text">
+			<h1 class="splash__header">Welcome to this site.</h1>
+			<p class="splash__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, blanditiis?</p>
+			<a href="#" class="btn splash__btn">See More</a>
+		</div>
+	</div>
+
+	<div class="section-container">
+		<section class="section section--top section--white">
+			<div class="section__content">
+				<p class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae doloribus consectetur molestiae placeat aspernatur error dicta quis velit, quibusdam amet.</p>
+				<div class="cards-container">
+					<div class="card">
+						<i class="fas fa-th card__icon card__icon--red"></i>
+						<h4 class="card__title">Responsive</h4>
+						<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sit quam ipsum, necessitatibus obcaecati corrupti?</p>
+					</div>
+					<div class="card">
+						<i class="fas fa-bars card__icon card__icon--blue"></i>
+						<h4 class="card__title">Quality</h4>
+						<p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsam aspernatur harum sint amet quos!</p>
+					</div>
+					<div class="card">
+						<i class="far fa-life-ring card__icon card__icon--pink"></i>
+						<h4 class="card__title">Support</h4>
+						<p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptate, corporis quae aliquid voluptates nulla.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section parallax">
+			<div class="section__content">
+				<div class="parallax__columns">
+					<div class="parallax__column--left">
+						<h2 class="parallax__title">Lorem ipsum dolor sit.</h2>
+						<p class="parallax__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium error voluptas voluptatum aut magni, mollitia sint rerum perspiciatis magnam.</p>
+						<p class="parallax__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, commodi!</p>
+					</div>
+					<div class="parallax__column--right">
+						<img class="parallax__image" src="images/devices.svg" alt="A smartphone, tablet, and PC monitor.">
+					</div>
+				</div>
+
+				<div class="parallax__video-container">
+					<iframe src="https://www.youtube.com/embed/pYOJNOJfJxU?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" class="parallax__video" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section--grey">
+			<div class="section__content">
+				<h2 class="section__title section__title--dark">Products</h2>
+				<p class="section__subtitle">Lorem ipsum dolor sit amet consectetur.</p>
+
+				<div class="products">
+					<div class="product">
+						<img src="images/product1.jpg" alt="A blonde woman in a grey jumper." class="product__image">
+						<a href="#" class="product__category">Trending</a>
+						<h3 class="product__name">Lorem, ipsum.</h3>
+						<p class="product__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis reprehenderit itaque adipisci maxime, similique nisi.</p>
+						<div class="product__pricing">
+							<p class="product__price">$90.00 - $95.00</p>
+							<div class="product__options">
+								<a class="product__link" href="#">
+									<i class="fas fa-cart-plus product__icon"></i>
+								</a>
+								<div role="tooltip" class="product__popup">
+									<p>Add To Cart</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<img src="images/product2.jpg" alt="A hand inside a blue trouser's pocket." class="product__image">
+						<a href="#" class="product__category">Trending</a>
+						<h3 class="product__name">Lorem, ipsum.</h3>
+						<p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum necessitatibus commodi accusantium earum totam labore nesciunt beatae?</p>
+						<div class="product__pricing">
+							<p class="product__price">$90.00 - $95.00</p>
+							<div class="product__options">
+								<a class="product__link" href="#">
+									<i class="fas fa-cart-plus product__icon"></i>
+								</a>
+								<div role="tooltip" class="product__popup">
+									<p>Add To Cart</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<img src="images/product3.jpg" alt="A man in a leather coat looking backwards." class="product__image">
+						<a href="#" class="product__category">Trending</a>
+						<h3 class="product__name">Lorem, ipsum.</h3>
+						<p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsam velit repellat recusandae eos voluptatum, quidem iure magni.</p>
+						<div class="product__pricing">
+							<p class="product__price">$90.00 - $95.00</p>
+							<div class="product__options">
+								<a class="product__link" href="#">
+									<i class="fas fa-cart-plus product__icon"></i>
+								</a>
+								<div role="tooltip" class="product__popup">
+									<p>Add To Cart</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<img src="images/product4.jpg" alt="A man in dungerees looking in the distance." class="product__image">
+						<a href="#" class="product__category">Trending</a>
+						<h3 class="product__name">Lorem, ipsum.</h3>
+						<p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio voluptates quaerat temporibus magni beatae voluptatem?</p>
+						<div class="product__pricing">
+							<p class="product__price">$90.00 - $95.00</p>
+							<div class="product__options">
+								<a class="product__link" href="#">
+									<i class="fas fa-cart-plus product__icon"></i>
+								</a>
+								<div role="tooltip" class="product__popup">
+									<p>Add To Cart</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="section__content">
+				<h2 class="section__title section__title--dark">Meet our Team</h2>
+				<p class="section__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, inventore molestias.</p>
+				<div class="people">
+					<div class="person">
+						<img src="images/profile1.jpg" alt="A woman in a beanie looking into the distance." class="person__image">
+						<div class="person__info">
+							<h3 class="person__name">Jane Johnson</h3>
+							<p class="person__job">CEO</p>
+							<p class="person__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolorum?</p>
+							<div class="person__social">
+								<a href="#"><i class="fab fa-facebook-f person__icon person__icon--facebook"></i></a>
+								<a href="#"><i class="fab fa-linkedin-in person__icon person__icon--link"></i></a>
+								<a href="#"><i class="fab fa-twitter person__icon person__icon--twitter"></i></a>
+								<a href="#"><i class="fab fa-pinterest-p person__icon person__icon--pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="person">
+						<img src="images/profile2.jpg" alt="A man sitting on a fence." class="person__image">
+						<div class="person__info">
+							<h3 class="person__name">Pete Classman</h3>
+							<p class="person__job">HR</p>
+							<p class="person__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, porro?</p>
+							<div class="person__social">
+								<a href="#"><i class="fab fa-facebook-f person__icon person__icon--facebook"></i></a>
+								<a href="#"><i class="fab fa-linkedin-in person__icon person__icon--link"></i></a>
+								<a href="#"><i class="fab fa-behance person__icon person__icon--behance"></i></a>
+								<a href="#"><i class="fab fa-pinterest-p person__icon person__icon--pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="person">
+						<img src="images/profile3.jpg" alt="A woman in sunglasses in the sun." class="person__image">
+						<div class="person__info">
+							<h3 class="person__name">Kate Petersburg</h3>
+							<p class="person__job">Developer</p>
+							<p class="person__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur neque harum vero necessitatibus dignissimos.</p>
+							<div class="person__social">
+								<a href="#"><i class="fab fa-facebook-f person__icon person__icon--facebook"></i></a>
+								<a href="#"><i class="fab fa-linkedin-in person__icon person__icon--link"></i></a>
+								<a href="#"><i class="fab fa-twitter person__icon person__icon--twitter"></i></a>
+								<a href="#"><i class="fab fa-github person__icon person__icon--github"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="person">
+						<img src="images/profile4.jpg" alt="A man standing in front of a graffitied wall." class="person__image">
+						<div class="person__info">
+							<h3 class="person__name">Harvey Popper</h3>
+							<p class="person__job">Project Manager</p>
+							<p class="person__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, fugit voluptatum.</p>
+							<div class="person__social">
+								<a href="#"><i class="fab fa-google-plus-g person__icon person__icon--google"></i></a>
+								<a href="#"><i class="fab fa-linkedin-in person__icon person__icon--link"></i></a>
+								<a href="#"><i class="fab fa-twitter person__icon person__icon--twitter"></i></a>
+								<a href="#"><i class="fab fa-pinterest-p person__icon person__icon--pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="section__content">
+				<h2 class="section__title section__title--dark">Our Clients Love Us</h2>
+				<p class="section__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum dignissimos ab numquam.</p>
+				<div class="clients">
+					<div class="client">
+						<img src="images/client1.jpg" alt="A man in glasses looking behind his back, towards the camera." class="client__image">
+						<h3 class="client__name">Tyson Norell</h3>
+						<p class="client__tag">@TysonNorell</p>
+						<p class="client__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo optio aliquam commodi, sint ipsa aperiam rerum obcaecati a iste?.</p>
+					</div>
+					<div class="client">
+						<img src="images/client2.jpg" alt="A tattooed man sitting at a table." class="client__image">
+						<h3 class="client__name">Percy Wheater</h3>
+						<p class="client__tag">@Wheater</p>
+						<p class="client__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est debitis quaerat sequi voluptas facilis aspernatur rem, nihil commodi doloribus.</p>
+					</div>
+					<div class="client">
+						<img src="images/client3.jpg" alt="A woman with curly hair looking at the camera." class="client__image">
+						<h3 class="client__name">Lola Masterson</h3>
+						<p class="client__tag">@LMasterson</p>
+						<p class="client__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae placeat quasi cupiditate alias! Saepe, doloribus. Architecto, officia velit! Vel, dolor.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section newsletter">
+			<div class="section__content">
+				<h2 class="section__title section__title--light">Subscribe to our Newsletter</h2>
+				<p class="section__subtitle section__subtitle--light">Lorem, ipsum dolor.</p>
+
+				<form action="" class="newsletter__form">
+					<div class="newsletter__input-container">
+						<i class="fas fa-envelope newsletter__icon"></i>
+						<div class="newsletter__email-container">
+							<input type="text" class="newsletter__input" placeholder="Your Email Here">
+							<div class="newsletter__underline"></div>
+						</div>
+					</div>
+					<button class="btn btn--sm-rounded newsletter__btn">Subscribe</button>
+				</form>
+			</div>
+		</section>
+
+		<section class="section section--grey">
+			<div class="section__content">
+				<h2 class="section__title section__title--dark">Blog</h2>
+				<p class="section__subtitle">Lorem ipsum dolor sit.</p>
+
+				<div class="posts">
+					<div class="post">
+						<div class="post__image-container">
+							<img src="images/post1.jpg" alt="A man DJing." class="post__image"/>
+						</div>
+						<p class="post__category">Appearance</p>
+						<h3 class="post__title">Lorem, ipsum dolor.</h3>
+						<p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit architecto dicta, aliquam officiis quidem asperiores labore non delectus similique? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, corrupti! <a href="#" class="post__link">Read More...</a></p>
+					</div>
+					<div class="post">
+						<div class="post__image-container">
+							<img src="images/post2.jpg" alt="A concert." class="post__image"/>
+						</div>
+						<p class="post__category">Appearance</p>
+						<h3 class="post__title">Lorem, ipsum dolor.</h3>
+						<p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit architecto dicta, aliquam officiis quidem asperiores labore non delectus similique? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, corrupti! <a href="#" class="post__link">Read More...</a></p>
+					</div>
+					<div class="post">
+						<div class="post__image-container">
+							<img src="images/post3.jpg" alt="A man in a suit." class="post__image"/>
+						</div>
+						<p class="post__category">Appearance</p>
+						<h3 class="post__title">Lorem, ipsum dolor.</h3>
+						<p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit architecto dicta, aliquam officiis quidem asperiores labore non delectus similique? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, corrupti! <a href="#" class="post__link">Read More...</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section contact">
+			<div class="section__content">
+				<div class="contact__columns">
+					<div class="contact__column">
+						<h2 class="section__title section__title--light">Get in Touch</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fuga labore animi minus eum cumque distinctio laborum quaerat quam architecto.</p>
+
+						<div class="info">
+							<i class="fas fa-map-marker-alt info__icon"></i>
+							<div class="info__content">
+								<h3 class="info__title">Find us at</h3>
+								<div class="info__address">
+									<p>123 Main Street</p>
+									<p>Some Town</p>
+									<p>Some Country</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="info">
+							<i class="fas fa-mobile-alt info__icon"></i>
+							<div class="info__content">
+								<h3 class="info__title">Call us</h3>
+								<div class="info__address">
+									<p>John Smith</p>
+									<p>+123456789</p>
+									<p>Mon-Fri 9:00-17:00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contact__column">
+						<div class="form">
+							<div class="form__header">
+								<h3>Contact Us</h3>
+							</div>
+							<form action="" class="form__inputs">
+								<div class="form__section form__section--half">
+									<input type="text" class="form__input" id="name" required>
+									<label class="form__label" for="name">Your Name</label>
+									<div class="form__underline"></div>
+								</div>
+
+								<div class="form__section form__section--half">
+									<input type="text" class="form__input" id="email" required>
+									<label class="form__label" for="email">Your Email</label>
+									<div class="form__underline"></div>
+								</div>
+								
+								<div class="form__section form__section--full">
+									<input type="text" class="form__input" id="subject" required>
+									<label class="form__label" for="subject">Subject</label>
+									<div class="form__underline"></div>
+								</div>
+
+								<div class="form__section form__section--full">
+									<textarea class="form__input form__input--textarea" id="message" required></textarea>
+									<label class="form__label form__label--top" for="message">Your Message</label>
+									<div class="form__underline"></div>
+								</div>
+
+								<button class="btn btn--sm-rounded">Send Message</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="section section--end footer">
+			<div class="section__content">
+				<div class="footer__columns">
+					<div class="footer__column">
+						<h3 class="footer__header">About Us</h3>
+						<p class="footer__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ipsam dicta commodi ipsum nemo. Omnis officiis dolore tempore eaque deserunt!</p>
+						<p class="footer__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi magni culpa atque. Porro voluptatum placeat accusamus perspiciatis, dolorem dolorum doloribus.</p>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__header">Social Media</h3>
+						<div class="media">
+							<div class="media__entry">
+								<div class="media__icon-container">
+									<i class="fab fa-twitter media__icon"></i>
+								</div>
+								<p class="media__content">Lorem ipsum dolor sit.<br><a href="#" class="media__link">www.example.com</a></p>
+							</div>
+							<div class="media__entry">
+								<div class="media__icon-container">
+									<i class="fab fa-facebook-f media__icon"></i>
+								</div>
+								<p class="media__content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, exercitationem.<br> <a href="#" class="media__link">www.example.com/page</a></p>
+							</div>
+							<div class="media__entry">
+								<div class="media__icon-container">
+									<i class="fab fa-twitter media__icon"></i>
+								</div>
+								<p class="media__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><a href="#"	 class="media__link">www.example.com/login</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__header">Instagram</h3>
+						<div class="instagram">
+							<img src="images/client1.jpg" alt="" class="instagram__image">
+							<img src="images/client1.jpg" alt="" class="instagram__image">
+							<img src="images/client1.jpg" alt="" class="instagram__image">
+							<img src="images/client1.jpg" alt="" class="instagram__image">
+							<img src="images/client1.jpg" alt="" class="instagram__image">
+							<img src="images/client1.jpg" alt="" class="instagram__image">
+							<img src="images/client1.jpg" alt="" class="instagram__image">
+							<img src="images/client1.jpg" alt="" class="instagram__image">
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__end">
+					<div class="footer__links">
+						<a href="#" class="footer__link">Home</a>
+						<a href="#" class="footer__link">Shop</a>
+						<a href="#" class="footer__link">Blog</a>
+						<a href="#" class="footer__link">Contact</a>
+					</div>
+					<p class="footer__copyright">Hestia Clone | Made by Alice</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/navigation.js" type="application/javascript"></script>
+</body>
+</html>

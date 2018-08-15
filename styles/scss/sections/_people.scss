@@ -1,0 +1,144 @@
+.people{
+	display:grid;
+	width:100%;
+	grid-template-columns: 1fr;
+
+	margin:75px 0px;
+
+	grid-gap:75px 35px;
+
+	@include breakpoint($small){
+		grid-template-columns: 1fr 1fr;	
+	}
+}
+
+.person{
+	display:flex;
+	flex-direction: column;
+
+	align-items:center;
+	text-align: center;
+
+	&__image{
+		width: 100px;
+		height:100px;
+
+		margin-right:0px;
+		margin-bottom:30px;
+
+		border-radius:3%;
+
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+		object-fit: cover;
+	}
+
+	&__name{
+		color:$colour-navy;
+	}
+
+	&__job{
+		@extend %tag;
+
+		color:#747474;
+
+		margin:15px 0px;
+	}
+
+	&__description{
+		display:none;
+
+		color:$body-colour;
+		font-size:14px;
+		margin-bottom: 25px;
+	}
+
+	&__icon{
+		font-size:18px;
+
+		margin:0px 5px;
+
+		&--facebook{
+			color:#3b5998;
+
+			&:hover{
+				color:lighten(#3b5998, 25%);
+			}
+		}
+
+		&--link{
+			color:#0077B5;
+
+			&:hover{
+				color:lighten(#0077B5, 25%);
+			}
+		}
+
+		&--twitter{
+			color:#00aced;
+			
+			&:hover{
+				color:lighten(#00aced, 25%);
+			}
+		}
+
+		&--pinterest{
+			color:#cb2027;
+			
+			&:hover{
+				color:lighten(#cb2027, 25%);
+			}
+		}
+
+		&--behance{
+			color:#1769ff;
+
+			&:hover{
+				color:lighten(#1769ff, 25%);
+			}
+		}
+
+		&--github{
+			color:#333;
+
+			&:hover{
+				color:lighten(#333, 25%);
+			}
+		}
+
+		&--google{
+			color:#d34836;
+
+			&:hover{
+				color:lighten(#d34836, 25%);
+			}
+		}
+	}
+
+	@include breakpoint($medium){
+		text-align: left;
+
+		&__image{
+			width:305px;
+			height:305px;
+		}
+
+		&__description{
+			display:block;
+		}
+
+		&__icon{
+			margin:0px 10px;
+		}
+	}
+
+	@include breakpoint($large){
+		flex-direction: row;
+
+		&__image{
+			width:130px;
+			height:130px;
+			margin-right:30px;
+		}
+	}
+}

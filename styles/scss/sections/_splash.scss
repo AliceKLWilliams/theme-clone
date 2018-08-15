@@ -1,0 +1,38 @@
+.splash{
+	width:100%;
+	height:90vh;
+
+	object-fit: cover;
+
+	position: relative;
+
+	&__text{
+		position: absolute;
+		top:50%;
+		left:50%;
+
+		transform: translate(-50%, -50%);
+		
+		text-align: center;
+
+		color:white;
+	}
+
+	&__header{
+		font-size:3rem;
+		margin-bottom:30px;
+	}
+
+	&__subtitle{
+		font-weight: $bold;
+		font-family: $tagline-font;
+		margin-bottom:30px;
+	}
+
+	@include breakpoint($small){
+		&__header{
+			font-size: auto;
+		}
+	}
+
+}

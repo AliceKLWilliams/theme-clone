@@ -1,0 +1,98 @@
+.newsletter{
+	background-image: url("../../images/newsletter.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&__form{
+		background-color:white;
+		padding:20px 30px;
+		width:100%;
+		margin:20px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		border-radius:10px;
+	}
+
+	&__icon{
+		margin:5px 7.5px 5px 5px;
+	}
+
+	&__input-container{
+		display:flex;
+		flex-direction: row;
+		width:100%;
+		margin-bottom:10px;
+	}
+
+	&__email-container{
+		flex-grow: 1;
+	}
+
+	$this:&;
+	&__input{
+		border:none;
+		border-bottom: 1px solid #d3d3d3;
+		padding:5px;
+
+		width:100%;
+
+		&:focus{
+			outline:none;
+		}
+
+		&:focus + #{$this}__underline{
+			background-size:100% 100%;
+			transition: background-size 0.3s;
+		}
+	}
+
+	&__underline{
+		width:100%;
+
+		position: relative;
+		top:-2px;
+
+		height:2px;
+		background:linear-gradient($colour-pink, $colour-pink);
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size:0% 100%;
+		
+		transition: none;
+	}
+
+	&__btn{
+		width:100%;
+	}
+
+	@include breakpoint($medium){
+		&__form{
+			flex-direction: row;
+		}
+
+		&__btn{
+			width:150px;
+		}
+
+		&__input-container{
+			margin-bottom: 0px;
+			margin-right:15px;
+		}
+	}
+
+	@include breakpoint($large){
+		&__form{
+			width:60%;
+
+			padding:15px 20px;
+		}
+
+		&__btn{
+			width:auto;
+		}
+	}
+}

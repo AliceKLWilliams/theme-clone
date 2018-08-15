@@ -1,0 +1,27 @@
+.btn{
+	background: $colour-pink;
+	padding: 15px 25px;
+	text-transform: uppercase;
+	color:white;
+	font-size: $txt-small;
+	font-weight: 500;
+	font-family: $base-font;
+
+	border:none;
+
+	&:hover{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+	}
+
+	&:visited{
+		color:white;
+	}
+
+	&--rounded{
+		border-radius: 30px;
+	}
+
+	&--sm-rounded{
+		border-radius: 10px;
+	}
+}

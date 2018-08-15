@@ -1,0 +1,25 @@
+h1, h2, h3, h4, h5, h6{
+	font-family: $card-title-font;
+	line-height: 1.5;
+}
+
+p{
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+:root{
+	font-size:16px;
+}
+
+h1{
+	font-size: 4rem;
+}
+
+h2{
+	font-size:2.3rem;
+}
+
+h3{
+	font-size: 1.2rem;
+}
